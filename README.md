@@ -27,3 +27,5 @@ file_with_SMTPs - Text file with SMTP servers separated by line (password:login:
 #
 # Mailer
 It is GUI program.
+
+Tags: spam program, mass mailing, mailing script, python send email,auto spamer
