@@ -20,8 +20,9 @@ def check(host,port,log,pas,fl):
 fl = open("checked.txt", "a")
 if len(sys.argv) < 2:
    print ("Usage: smtpchecker.py smtps.txt")
-with open(sys.argv[1],'r') as smtps:
-   for line in smtps:
-      smtp = line.split(":")
-      check(smtp[2],int(smtp[3]),smtp[1],smtp[0],fl)
+else:
+   with open(sys.argv[1],'r') as smtps:
+      for line in smtps:
+         smtp = line.split(":")
+         check(smtp[2],int(smtp[3]),smtp[1],smtp[0],fl)
 fl.close()
